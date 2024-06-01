@@ -1,0 +1,37 @@
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app-route-content-item {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 12px;
+}
+
+.main-container {
+  background-color: #EAE2D9;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p {
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  font-stretch: expanded;
+}
+
+.section-design {
+  padding: 12px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 12px;
+}
+
+.section-design:hover {
+  box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.2);
+}
