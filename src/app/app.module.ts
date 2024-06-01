@@ -15,6 +15,9 @@ import { ContactUsComponent } from 'src/app/components/contact-us/contact-us.com
 import { FooterComponent } from 'src/app/components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { CareerComponent } from './components/career/career.component';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { CareerComponent } from './components/career/career.component';
     MatToolbarModule,
     MatMenuModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

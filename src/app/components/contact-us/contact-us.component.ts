@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-contact-us',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact-us.component.scss']
 })
 export class ContactUsComponent {
-
+  formsData = {
+    Name: '',
+    Email: ''
+  }
+  onSubmit(form: NgForm) {
+    console.log(form.value);
+  }
 }

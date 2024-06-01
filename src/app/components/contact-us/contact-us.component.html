@@ -1,1 +1,72 @@
-<p>contact-us works!</p>
+<section class="contact-us-container-main section-design app-route-content-item">
+  <div class="tw-flex tw-flex-row tw-p-4">
+    <div class="contact-info tw-w-[50%] tw-pr-5">
+      <h1 class="tw-text-[#E74C3C]">CONTACT INFO</h1>
+      <h4 class="tw-pt-4">Head Office:</h4>
+      <p class="tw-pt-2">Purok 6, Brgy. Tibig, Lipa City 4217, Batangas, Philippines</p>
+
+      <h4 class="tw-pt-4">Liason Office:</h4>
+      <p class="tw-pt-2">Room 606, Cattleya Cond., 235 Salcedo St., Legaspi Village, Makati City 1229, Philippines</p>
+
+      <h4 class="tw-pt-4">Contact Details:</h4>
+      <p class="tw-pt-2">(632) 8817-8020 / 8812-8415 / 8818-3663 / 09189166849</p>
+
+      <h4 class="tw-pt-4">E-mail:</h4>
+      <p class="tw-pt-2">sales@pilkanekoseeds.com.ph</p>
+      <p>info@pilkanekoseeds.com.ph</p>
+    </div>
+
+    <div class="tw-text-[#E74C3C] contact-form tw-w-[50%]">
+      <h1>CONTACT FORM</h1>
+      <form class="tw-flex-col tw-flex tw-pt-4" #registrationForm="ngForm" (ngSubmit)="onSubmit(registrationForm)">
+        <!-- Name Field -->
+        <mat-form-field class="tw-w-[100%]" appearance="outline">
+          <mat-label>Company Name</mat-label>
+          <input matInput type="text" name="CompanyName" ngModel required>
+        </mat-form-field>
+
+        <div class="tw-flex tw-flex-row tw-gap-4">
+          <mat-form-field class="tw-w-[100%]" appearance="outline">
+            <mat-label>First Name</mat-label>
+            <input matInput type="text" name="FirstName" ngModel required>
+          </mat-form-field>
+          <mat-form-field class="tw-w-[100%]" appearance="outline">
+            <mat-label>Last Name</mat-label>
+            <input matInput type="text" name="LastName" ngModel required>
+          </mat-form-field>
+        </div>
+
+        <!-- Email Field -->
+        <div class="tw-flex tw-flex-row tw-gap-4">
+          <mat-form-field class="tw-w-[100%]" appearance="outline">
+            <mat-label>Your Email</mat-label>
+            <input matInput type="email" name="Email" ngModel required email>
+          </mat-form-field>
+          <mat-form-field class="tw-w-[100%]" appearance="outline">
+            <mat-label>Contact Number</mat-label>
+            <input matInput type="text" name="ContactNumber" ngModel required>
+            <!-- <mat-hint>Start with +8801</mat-hint> -->
+          </mat-form-field>
+        </div>
+
+        <mat-form-field class="tw-w-[100%]" appearance="outline">
+          <mat-label>Address</mat-label>
+          <input matInput type="text" name="Address" ngModel required>
+        </mat-form-field>
+
+        <mat-form-field class="tw-w-[100%]" appearance="outline">
+          <mat-label>Subject</mat-label>
+          <input matInput type="text" name="Subject" ngModel required>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Your Message</mat-label>
+          <textarea matInput type="text" ngModel required></textarea>
+        </mat-form-field>
+
+        <!-- Submit Button -->
+        <button mat-raised-button color="primary" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
